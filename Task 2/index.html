@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Hey, Welcome.</h1>
+        <p>I am Sachin Shrivastava, a dedicated student with a strong foundation in web development and programming. My skill set includes knowledge in <li> HTML</li> <li>CSS</li> <li>MySQL</li> <li>C/C++</li> <li>Java</li> </p>
+        <a href="#about" class="btn">Learn More</a>
+        <a href="Document 1.pdf" class="resume-btn" target="_blank">Resume</a>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate student dedicated to creating interactive digital applications and websites using <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, and <span class="highlight">JavaScript</span>. Currently, I am working on an exciting Weather application project that showcases my skills and creativity in these technologies.</p>
+        <p>I am currently pursuing a <span class="highlight">B.Tech</span> in <span class="highlight">Computer Science</span> at <span class="highlight">IPS Academy</span>. My educational journey has provided me with a solid foundation in both the theoretical and practical aspects of web development. I am committed to continuously expanding my knowledge and staying updated with the latest industry trends.</p>
+        <p>Alongside my technical expertise, I have demonstrated strong management abilities in various projects, effectively coordinating teams and ensuring the timely delivery of high-quality results.</p>
+        <p>I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to connect or learn more about my work!</p>
+        <div class="cta">
+            <a href="mailto:ssachinshri@email.com">Contact Me</a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/sachin-shrivastava-3b0420308/" target="_blank">
+                <img src="img/linkedin-icon-logo-png-transparent.png" alt="LinkedIn Profile Picture">
+                Connect with me on LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Landing Page</h3>
+            <p>Created a basic landing page using HTML and CSS involves structuring the content with HTML and styling it with CSS.</p>
+        </div>
+        <div class="project">
+            <h3>Calculator</h3>
+            <p>Created a functional calculator using HTML, CSS and JS basics that implements operators (+,-,/,*) and make it interactive.</p>
+        </div>
+        <div class="project">
+            <h3>To-Do-List</h3>
+            <p>Created an interactive to-do list using HTML, CSS, and JS which is very easy to operate as you can easily add a task and mark it as complete once done.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
